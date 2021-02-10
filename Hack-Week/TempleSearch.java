@@ -46,15 +46,17 @@ public class TempleSearch {
             Integer templeAmount = 0;
             System.out.println("\n\nPlease enter a state or country:");
             input = userInput.nextLine();
-            templeAmount = findInfo(input, templeAmount);
+            if (amountLooped == 0)
+            {
+                templeAmount = findInfo(input, templeAmount);
+            }
+            else if (amountLooped>0){
+                input = userInput.nextLine();
+                templeAmount = findInfo(input, templeAmount);
+            }
 
             //Check to see if place exists in Array. If not, while loop asks for new input
-            while (infoDisplayed.size() <= 0) {
-                while (!userInput.hasNext()) {
-                    String errors = "";
-                    errors = userInput.nextLine();
-                }
-                    input = userInput.nextLine();
+            while (infoDisplayed.size() <= 0 ) {
                 System.out.println("Unable to find Temples in " + input + "\n");
                 System.out.println("Please enter a state or country:");
                 input = userInput.nextLine();
@@ -64,9 +66,9 @@ public class TempleSearch {
             //Display Table
             display(input, templeAmount);
 
-            //Wait while User looks at the generated list for 3 seconds
+            //Wait while User looks at the generated list for 2 seconds
             try {
-                TimeUnit.SECONDS.sleep(3);
+                TimeUnit.SECONDS.sleep(2);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -77,12 +79,8 @@ public class TempleSearch {
 
             //Check for proper input
             while (!input.equalsIgnoreCase("Y") && !input.equalsIgnoreCase("N")) {
-                while (!userInput.hasNext()) {
-                    String errors = "";
-                    errors = userInput.nextLine();
-                }
                 System.out.println("Invalid Response. Type Y or N");
-                input = userInput.nextLine();
+                input = userInput.next();
             }
 
             //Call the information function Covid19()
@@ -105,10 +103,10 @@ public class TempleSearch {
             } else {
                 infoDisplayed.clear();
             }
-
-            //Wait while for 5 seconds
+            templeAmount = 0;
+            //Wait while for 2 seconds
             try {
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -241,7 +239,7 @@ public class TempleSearch {
 
             //Wait while for 3 seconds
             try {
-                TimeUnit.SECONDS.sleep(3);
+                TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
