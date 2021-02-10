@@ -43,24 +43,18 @@ public class TempleSearch {
         while (continueLoop) {
             //Recieve information from User and find Information about the temples in that location
             String input = "";
-            String error = "";
             Integer templeAmount = 0;
             System.out.println("\n\nPlease enter a state or country:");
-            if(amountLooped == 0)
-            {
-                input = userInput.nextLine();
-            }
-            else if (amountLooped > 0)
-            {
-                while(!userInput.hasNext()){
-                    error = userInput.next();
-                }
-                input = userInput.next();
-            }
+            input = userInput.nextLine();
             templeAmount = findInfo(input, templeAmount);
 
             //Check to see if place exists in Array. If not, while loop asks for new input
             while (infoDisplayed.size() <= 0) {
+                while (!userInput.hasNext()) {
+                    String errors = "";
+                    errors = userInput.nextLine();
+                }
+                    input = userInput.nextLine();
                 System.out.println("Unable to find Temples in " + input + "\n");
                 System.out.println("Please enter a state or country:");
                 input = userInput.nextLine();
@@ -83,6 +77,10 @@ public class TempleSearch {
 
             //Check for proper input
             while (!input.equalsIgnoreCase("Y") && !input.equalsIgnoreCase("N")) {
+                while (!userInput.hasNext()) {
+                    String errors = "";
+                    errors = userInput.nextLine();
+                }
                 System.out.println("Invalid Response. Type Y or N");
                 input = userInput.nextLine();
             }
