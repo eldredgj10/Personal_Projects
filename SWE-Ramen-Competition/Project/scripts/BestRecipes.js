@@ -59,7 +59,7 @@ function sortBy()
 
 function output(element)
 {
-    const html = `<h3>${element.Name}</h3> <p>${element.URL}</p>`;
+    const html = `<article> <h3>${element.Name}</h3> <url>${element.location}</url> <img src = "${element.imageUrl}"> </article>`;
     document.querySelector('#Recipes').innerHTML += html;
 }
 
