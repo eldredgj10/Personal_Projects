@@ -1,19 +1,7 @@
 //Author: Jeanette Eldredge
 var allData = [];
-var male = [];
-var female = [];
-var last = [];
-function organize(list)
-{
-    allData.forEach(element => {
-        male.push(element.maleName);
-        female.push(element.femaleName);
-        last.push(element.lastName);
-    });
-    
-}
 
-const url = 'https://raw.githubusercontent.com/eldredgj10/JavaScript/master/Project/api/names.json';
+const url = 'https://raw.githubusercontent.com/eldredgj10/Personal_Projects/master/SWE-Ramen-Competition/Project/api/Recipes.json';
 fetch(url)
     .then((response) => {
     if (response.ok) {
@@ -25,84 +13,55 @@ fetch(url)
 })
     .then((response) => {
         allData = response;
-        organize(allData);
     });
 
 function reset()
 {
-    document.querySelector('#names').innerHTML = '';
+    document.querySelector('#Recipes').innerHTML = '';
 }
 
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
-
-function refuel(name)
-{
-    if (name == 'm')
-    {
-        allData.forEach(element => {
-            male.push(element.maleName);
-        });
-    }
-    else if (name == 'f')
-    {
-        allData.forEach(element => {
-            female.push(element.femaleName);
-        });
-    }
-    else
-    {
-        allData.forEach(element => {
-            last.push(element.lastName);
-        });
-    }
-}
-
-function generate()
+function sortBy()
 {
     var selection = document.getElementById('sortBy').value;
-    let name = '';
-    let generateNum = 0;
 
-    if (selection == "maleName") {
-        if (male.length == 1)
-        {
-            refuel("m");
-        }
-        generateNum = getRandomInt(male.length)
-        name = male[generateNum];
-        male.splice(generateNum, 1);
-    }
-    else if (selection == "femaleName")
+    if (selection == "All")
     {
-        if (female.length == 1)
-        {
-            refuel("f");
-        }
-        generateNum = getRandomInt(female.length)
-        name = female[generateNum];
-        female.splice(generateNum, 1);
+        reset();
+        allData.forEach(element => { output(element); });
+    }
+    else if (selection == "Soups")
+    {
+        reset();
+        allData.forEach(element => {
+            if (element.Type == "Soup") {
+                output(element);
+            }
+        });
+    }
+    else if (selection == "Salads")
+    {
+        reset();
+        allData.forEach(element => {
+            if (element.Type == "Salad") {
+                output(element);
+            }
+        });
     }
     else {
-        if (last.length == 1)
-        {
-            refuel("l");
-        }
-        generateNum = getRandomInt(last.length)
-        name = last[generateNum];
-        last.splice(generateNum, 1);
+        reset();
+        allData.forEach(element => {
+            if (element.Type == "Main dish") {
+                output(element);
+            }
+        });
     }
-    reset();
-    output(name);
 }
 
-function output(name)
+function output(element)
 {
-    const html = `<h3>${name}</h3>`;
-    document.querySelector('#names').innerHTML = html;
+    const html = `<h3>${element.Name}</h3> <p>${element.URL}</p>`;
+    document.querySelector('#Recipes').innerHTML += html;
 }
 
-const button = document.querySelector('#Generate');
-button.addEventListener('click', generate)
+const select = document.querySelector('#sortBy');
+select.addEventListener('click', sortBy);
