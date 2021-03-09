@@ -1,17 +1,5 @@
 //Author: Jeanette Eldredge
 var allData = [];
-var store = [];
-var price = [];
-var amount = [];
-function organize(list)
-{
-    allData.forEach(element => {
-        store.push(element.Store);
-        price.push(element.Price);
-        amount.push(element.Amount);
-    });
-    
-}
 
 const url = 'https://raw.githubusercontent.com/eldredgj10/Personal_Projects/master/SWE-Ramen-Competition/Project/api/BestPrices.json';
 fetch(url)
@@ -25,21 +13,16 @@ fetch(url)
 })
     .then((response) => {
         allData = response;
-        organize(allData);
     });
 
 
-function reset()
+function output()
 {
-    document.querySelector('#names').innerHTML = '';
+    allData.forEach(element => {
+        const html = `<article> <h2>${element.Store}</h2> <h3>${element.Price} for ${element.Amount}</h3> <img src = "${element.imageURL}"> </article>`;
+        document.querySelector('#StorePrice').innerHTML += html;
+    });
 }
 
-
-function output(name)
-{
-    const html = `<h3>${name}</h3>`;
-    document.querySelector('#names').innerHTML = html;
-}
-
-const button = document.querySelector('#Generate');
-button.addEventListener('click', generate)
+const button = document.querySelector('#activate');
+button.addEventListener('click', output)
