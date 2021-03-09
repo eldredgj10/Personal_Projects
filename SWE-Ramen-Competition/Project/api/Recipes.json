@@ -1,0 +1,50 @@
+[
+    {
+        "Type:": "Main dish",
+        "Name": "Ramen Sliders",
+        "URL": "https://www.tasteofhome.com/recipes/ramen-sliders/"
+
+    },
+    {
+        "Type:": "Salad",
+        "Name": "Sesame Ramen Salad",
+        "URL": "https://www.tasteofhome.com/recipes/sesame-ramen-salad/"
+
+    },
+    {
+        "Type:": "Salad",
+        "Name": "Turkey Ramen Noodle Salad",
+        "URL": "https://www.tasteofhome.com/recipes/turkey-ramen-noodle-salad/"
+
+    },
+    {
+        "Type:": "Salad",
+        "Name": "Nutty Broccoli Slaw",
+        "URL": "https://www.tasteofhome.com/recipes/nutty-broccoli-slaw/"
+
+    },
+    {
+        "Type:": "Main dish",
+        "Name": "Chicken Noodle Stir Fry",
+        "URL": "https://www.tasteofhome.com/recipes/chicken-noodle-stir-fry/"
+
+    },
+    {
+        "Type:": "Main dish",
+        "Name": "Asparagus Beef Lo Mein",
+        "URL": "https://www.tasteofhome.com/recipes/asparagus-beef-lo-mein/"
+
+    },
+    {
+        "Type:": "Soup",
+        "Name": "Upgraded Instant Ramen",
+        "URL": "https://www.budgetbytes.com/6-ways-to-upgrade-instant-ramen/"
+
+    },
+    {
+        "Type:": "Soup",
+        "Name": "Perfect Instant Ramen",
+        "URL": "https://cooking.nytimes.com/recipes/1016583-perfect-instant-ramen"
+
+    }
+]

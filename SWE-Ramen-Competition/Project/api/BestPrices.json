@@ -1,0 +1,32 @@
+[
+    {
+        "Store": "Walmart",
+        "Price": "$1.99",
+        "Amount": "12"
+    },
+    {
+        "Store": "Target",
+        "Price": "0.99",
+        "Amount": "6"
+    },
+    {
+        "Store": "Smith's",
+        "Price": "2.49",
+        "Amount": "12"
+    },
+    {
+        "Store": "Broulims",
+        "Price": "6.49",
+        "Amount": "24"
+    },
+    {
+        "Store": "Albertsons",
+        "Price": "4.69",
+        "Amount": "24"
+    },
+    {
+        "Store": "Macey's",
+        "Price": "0.40",
+        "Amount": "1"
+    }
+]

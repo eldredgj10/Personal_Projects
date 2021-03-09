@@ -1,14 +1,14 @@
 //Author: Jeanette Eldredge
 var allData = [];
-var male = [];
-var female = [];
-var last = [];
+var store = [];
+var price = [];
+var amount = [];
 function organize(list)
 {
     allData.forEach(element => {
-        male.push(element.maleName);
-        female.push(element.femaleName);
-        last.push(element.lastName);
+        store.push(element.Store);
+        price.push(element.Price);
+        amount.push(element.Amount);
     });
     
 }
