@@ -2,43 +2,50 @@
     {
         "Type": "Main dish",
         "Name": "Ramen Sliders",
-        "URL": "https://www.tasteofhome.com/recipes/ramen-sliders/"
+        "URL": "https://www.tasteofhome.com/recipes/ramen-sliders/",
+        "imageURL": "images/recipes/slider.JPG"
 
     },
     {
         "Type": "Salad",
         "Name": "Sesame Ramen Salad",
-        "URL": "https://www.tasteofhome.com/recipes/sesame-ramen-salad/"
+        "URL": "https://www.tasteofhome.com/recipes/sesame-ramen-salad/",
+        "imageURL": "images/recipes/Sesame-Ramen-Salad_EXPS_SDFM17_75316_C10_07_6b.jpg"
 
     },
     {
         "Type": "Salad",
         "Name": "Turkey Ramen Noodle Salad",
-        "URL": "https://www.tasteofhome.com/recipes/turkey-ramen-noodle-salad/"
+        "URL": "https://www.tasteofhome.com/recipes/turkey-ramen-noodle-salad/",
+        "imageURL": "images/recipes/exps100783_SD153319C10_09_6b.jpg"
 
     },
     {
         "Type": "Salad",
         "Name": "Nutty Broccoli Slaw",
-        "URL": "https://www.tasteofhome.com/recipes/nutty-broccoli-slaw/"
+        "URL": "https://www.tasteofhome.com/recipes/nutty-broccoli-slaw/",
+        "imageURL": "images/recipes/exps12366_MRR143297C09_12_5b-1.jpg"
 
     },
     {
         "Type": "Main dish",
         "Name": "Chicken Noodle Stir Fry",
-        "URL": "https://www.tasteofhome.com/recipes/chicken-noodle-stir-fry/"
+        "URL": "https://www.tasteofhome.com/recipes/chicken-noodle-stir-fry/",
+        "imageURL": "images/recipes/Chicken-Noodle-Stir-Fry_exps8797_RDS2719782A05_14_1b_RMS-1.jpg"
 
     },
     {
         "Type": "Main dish",
         "Name": "Asparagus Beef Lo Mein",
-        "URL": "https://www.tasteofhome.com/recipes/asparagus-beef-lo-mein/"
+        "URL": "https://www.tasteofhome.com/recipes/asparagus-beef-lo-mein/",
+        "imageURL": "images/recipes/Asparagus-Beef-Lo-Mein_EXPS_SDAM17_23290_D12_09_4b.jpg"
 
     },
     {
         "Type": "Soup",
         "Name": "Upgraded Instant Ramen",
-        "URL": "https://www.budgetbytes.com/6-ways-to-upgrade-instant-ramen/"
+        "URL": "https://www.budgetbytes.com/6-ways-to-upgrade-instant-ramen/",
+        "imageURL": "images/recipes/6-Ways-to-Upgrade-Instant-Ramen-V2.jpg"
 
     }
 ]
