@@ -19,7 +19,7 @@ fetch(url)
 function output()
 {
     allData.forEach(element => {
-        const html = `<article> <h2>${element.Store}</h2> <h3>${element.Price} for ${element.Amount}</h3> <img src = "${element.imageURL}"> </article>`;
+        const html = `<article> <h1>${element.Store}</h1> <h2>${element.Price} for ${element.Amount}</h2> </article>`;
         document.querySelector('#StorePrice').innerHTML += html;
     });
 }
