@@ -7,31 +7,31 @@
     },
     {
         "Store": "Target",
-        "Price": "0.99",
+        "Price": "$0.99",
         "Amount": "6",
         "imageURL": "images/logos/target.JPG"
     },
     {
         "Store": "Smith's",
-        "Price": "2.49",
+        "Price": "$2.49",
         "Amount": "12",
         "imageURL": "images/logos/smiths.png"
     },
     {
         "Store": "Broulims",
-        "Price": "6.49",
+        "Price": "$6.49",
         "Amount": "24",
         "imageURL": "images/logos/Broulims.png"
     },
     {
         "Store": "Albertsons",
-        "Price": "4.69",
+        "Price": "$4.69",
         "Amount": "24",
         "imageURL": "images/logos/albertsons.jpg"
     },
     {
         "Store": "Macey's",
-        "Price": "0.40",
+        "Price": "$0.40",
         "Amount": "1",
         "imageURL": "images/logos/maceys.JPG"
     }
